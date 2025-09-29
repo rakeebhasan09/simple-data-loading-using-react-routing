@@ -12,6 +12,9 @@ const Navbar = () => {
 			<li>
 				<NavLink to={"/posts"}>Posts</NavLink>
 			</li>
+			<li>
+				<NavLink to={"/gallery"}>Gallery</NavLink>
+			</li>
 		</>
 	);
 	return (

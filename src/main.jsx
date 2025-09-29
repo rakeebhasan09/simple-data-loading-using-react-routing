@@ -9,6 +9,7 @@ import Users from "./components/Users/Users";
 import UserDetails from "./components/Users/UserDetails";
 import Posts from "./components/Posts/Posts";
 import PostDetails from "./components/Posts/PostDetails";
+import ErrorRoute from "./components/ErrorRoute/ErrorRoute";
 
 const router = createBrowserRouter([
 	{
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
 				Component: PostDetails,
 			},
 		],
+	},
+	{
+		path: "*",
+		Component: ErrorRoute,
 	},
 ]);
 
