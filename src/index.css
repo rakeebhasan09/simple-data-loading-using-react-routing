@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.navbar ul li a.active {
+	background: #e7e7e8;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: auto;
+}
