@@ -1,7 +1,8 @@
-import { useLoaderData } from "react-router";
+import { useLoaderData, useNavigate } from "react-router";
 
 const UserDetails = () => {
 	const userDetails = useLoaderData();
+	const navigate = useNavigate();
 
 	console.log(userDetails);
 	return (
@@ -116,6 +117,14 @@ const UserDetails = () => {
 							</span>
 						</li>
 					</ul>
+					<div className="mt-4">
+						<button
+							onClick={() => navigate(-1)}
+							className="btn bg-black text-white border-black"
+						>
+							Back
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
